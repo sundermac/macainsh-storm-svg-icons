@@ -1,0 +1,101 @@
+#logo {
+    margin-top: 30px;
+}
+
+#icon-info {
+    margin-top: 30px;
+    background-color: #acdaf3;
+    padding: 20px;
+    border-radius: 30px;
+
+    font-family: "josefin-sans", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 40px;
+    font-size: 18px;
+}
+
+h3 {
+    font-family: "ohno-softie-variable", sans-serif;
+    font-size: 30px;
+    margin-bottom: 20px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: #3d598a;
+}
+
+#melon-con h3 {
+    margin-bottom: 110px;
+}
+
+div {
+    margin-top: 20px;
+    padding: 50px;      
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/* Apple Interaction */
+#apple:hover {
+    animation: roll 1s ease-in-out infinite;
+}
+
+@keyframes roll {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+/* Blueberry Interaction */
+#blueberry:hover {
+    animation: grow 1s ease-in-out infinite;
+}
+
+@keyframes grow {
+    0% {transform: scale(1)}
+    50% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+
+/* Mango Interaction */
+#mango:hover {
+    animation: hue 4s ease-in-out infinite;
+}
+
+@keyframes hue {
+    0% {filter: hue-rotate(0deg);}
+    50% {filter: hue-rotate(360deg);}
+    100% {filter: hue-rotate(0deg);}
+}
+
+/* Orange Interaction */
+#orange:hover #o-top {
+    opacity: 0%;
+    transition: all .5s ease-out;
+}
+
+/* Watermelon Interaction */
+#watermelon:hover {
+    animation: shrink 1s ease-in-out infinite;
+}
+
+@keyframes shrink {
+    0% {transform: scale(1)}
+    50% {transform: scale(.8);}
+    100% {transform: scale(1);}
+}
+
+/* Peach Interaction */
+#peach:hover {
+    filter: saturate(150%);
+    animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0% {transform: rotate(0deg)}
+    50% {transform: rotate(-6deg);}
+    100% {transform: rotate(0deg);}
+}
